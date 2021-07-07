@@ -1,0 +1,102 @@
+>> x = [85, 8000, 512, 75, 80; 70, 9000, 411, 80, 85; 75,7000,820,70,75]
+
+x =
+
+          85        8000         512          75          80
+          70        9000         411          80          85
+          75        7000         820          70          75
+
+>> w = [5,2,3,3,4]
+
+w =
+
+     5     2     3     3     4
+
+>> k = [1, 0, 0, 1,1]
+
+k =
+
+     1     0     0     1     1
+
+>> w = w/sum(w)
+
+w =
+
+    0.2941    0.1176    0.1765    0.1765    0.2353
+
+>> [m n] = size (x)
+
+m =
+
+     3
+
+
+n =
+
+     5
+
+>> for j=1:n,
+if k(j)==0, w(j)=-1*w(j);
+end if
+ end if
+     ↑
+Error: Illegal use of reserved keyword "if".
+ 
+>> end
+ end
+ ↑
+Error: Illegal use of reserved keyword "end".
+ 
+>> end
+ end
+ ↑
+Error: Illegal use of reserved keyword "end".
+ 
+>> end;
+ end;
+ ↑
+Error: Illegal use of reserved keyword "end".
+ 
+>> end;
+ end;
+ ↑
+Error: Illegal use of reserved keyword "end".
+ 
+>> for j=1:n,
+if k(j)==0, w(j)=-1*w(j);
+end;
+end;
+>> k
+
+k =
+
+     1     0     0     1     1
+
+>> w
+
+w =
+
+    0.2941   -0.1176   -0.1765    0.1765    0.2353
+
+>> for i=1:m,
+S(i)=prod(x(i,:).^w);
+end;
+>> S
+
+S =
+
+    2.5637    2.5470    2.2476
+
+>> V = S/sum(S)
+
+V =
+
+    0.3484    0.3461    0.3055
+
+>> 
+
+
+
+
+
+https://id.wikipedia.org/wiki/Sepeda_motor_sport
